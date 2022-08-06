@@ -100,3 +100,48 @@ nav{
     text-align: center;
     z-index: 1;
 }
+
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: grey;
+    border: 1px brown;
+    z-index: 1;
+    cursor: pointer;
+}
+.buyButton:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.slideImage{
+    z-index: 1;
+}
+.slideItem:nth-child(1) .slidebg{
+    background-color: rgb(182, 110, 110);
+}
+.slideItem:nth-child(2) .slidebg{
+    background-color: rgb(209, 181, 104);
+}
+.slideItem:nth-child(3) .slidebg{
+    background-color: rgb(157, 182, 110);
+}
+.slideItem:nth-child(4) .slidebg{
+    background-color: rgb(147, 110, 182);
+}
+
+.slideItem:nth-child(1) .slidePrice{
+    color: rgb(182, 110, 110);
+}
+.slideItem:nth-child(2) .slidePrice{
+    color: rgb(209, 181, 104);
+}
+.slideItem:nth-child(3) .slidePrice{
+    color: rgb(157, 182, 110);
+}
+.slideItem:nth-child(4) .slidePrice{
+    color: rgb(147, 110, 182);
+}
