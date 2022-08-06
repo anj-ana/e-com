@@ -193,4 +193,26 @@ nav{
     -webkit-box-shadow: 0px 0px 27px -3px #000000; 
     box-shadow: 0px 0px 27px -3px #000000;
 }
+.paymentTitle{
+    font-size: 20px;
+    color: grey;
+}
+label{
+    font-style: 10px;
+    font-weight: 300;
+    
+}
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+
+}
+.payInput::placeholder{
+    color:rgb(158, 153, 153)
+}
+.cardIcons{
+    display: flex;
+}
 
