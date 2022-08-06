@@ -1,3 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
 body{
     font-family: 'Lato', sans-serif;
     padding: 0;
@@ -5,7 +12,7 @@ body{
 }
 
 nav{
-    background-color: brown;
+    background-color: rgb(235, 114, 114);
     color: white;
     padding: 20px 50px;
     
@@ -21,21 +28,27 @@ nav{
 .search{
     display: flex;
     align-items: center;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 10px;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    
 }
+
+
 
 .searchInput{
     border: black;
-    background-color: transparent;
+    background-color: white;
 }
 
 .limitedOffer{
     font-size: 20px;
-    color: grey;
-    border-bottom: 2px solid green;
+    font-weight: 600;
+    color:  black;
     cursor: pointer;
+}
+.limitedOffer:hover{
+    color: red;
 }
 .navBottom{
     display: flex;
@@ -46,15 +59,22 @@ nav{
 .menuItem{
     margin-right: 60px;
     cursor: pointer;
-    color: black;
+    color:  black;
+    font-weight: 900;
+}
+.menuItem:hover{
+    color: white;
 }
 .slide{
-    background: url(https://i.pinimg.com/736x/e5/f8/27/e5f8275cb4fb21eb184c5c0b79a5499b.jpg); /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    background-color: rgb(245, 238, 202);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+    overflow: hidden;
 
 }
 .slideWrapper{
     display: flex;
     width: 500vw;
+    transition: all 1.5s ease-in-out;
 }
 .slideItem{
     width: 100vw;
@@ -63,7 +83,13 @@ nav{
     justify-content: center;
     position: relative;
 }
-
+.slidebg{
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
 
 .slideTitle{
     position: absolute;
@@ -72,13 +98,5 @@ nav{
     font-size: 35px;
     font-weight: 800;
     text-align: center;
-}
-.slidePrice{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    border: 1px brown;
+    z-index: 1;
 }
